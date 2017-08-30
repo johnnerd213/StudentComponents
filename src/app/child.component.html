@@ -1,0 +1,21 @@
+<div>
+    <input [(ngModel))]= "studNo"
+        (input)="studNo=$event.target.value"/> <br/>
+    <input [(ngModel))]= "studFname"
+        (input)="studFname=$event.target.value"/> <br/>
+    <input [(ngModel))]= "studLname"
+        (input)="studLname=$event.target.value"/> <br/>
+    <input [(ngModel))]= "studProg"
+        (input)="studProg=$event.target.value"/> <br/>
+    <input [(ngModel))]= "studYr"
+        (input)="studYr=$event.target.value"/> <br/>
+</div>
+
+<div id="options">
+  <button id="addStudents" (click)="addStudentEntry()">
+    Add Student Entry
+  </button>
+  <button id="listStudents" (click)="listStudents()">
+    List Students
+  </button>
+</div>
