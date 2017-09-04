@@ -1,30 +1,15 @@
 <div>
-  <label>Student Number</label><input type="text" [(ngModel)] = "studNo"><br>
-  <label>Student First Name</label><input type="text" [(ngModel)] = "studFname"><br>
-  <label>Student Last Name</label><input type="text" [(ngModel)] = "studLname"><br>
-  <label>Student Program</label><input type="text" [(ngModel)] = "studProg"><br>
-  <label>Student Year</label><input type="text" [(ngModel)] = "studYr"><br>
-</div>
-<div id="options">
-  <button id="addStudents" (click)="addStudentEntry()">
-    Add Student Entry
-  </button>
-  <button id="listStudents" (click)="listStudents()">
-    List Students
-  </button>
-</div>
-<div>
     {{messages}}
 </div>
 <div *ngIf="printing">
   <table>
     <thead>
       <tr>
-        <th>Student Number</th>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Program Enrolled</th>
-        <th>Year</th>
+        <th><label="studNo">Student Number</label></th>
+        <th><label="studFname">First Name</label></th>
+        <th><label="studLname">Last Name</label></th>
+        <th><label="studProg">Program Enrolled</label></th>
+        <th><label="studYr">Year</label></th>
       </tr>
     </thead>
   <tbody>

@@ -1,11 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
+  templateUrl: './app.component.html',  
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
   studentCollection: Array<object> = [];
   studentRecord: object;
   studNo: number;
@@ -45,7 +46,7 @@ export class AppComponent {
         this.messages = null;
         this.clearValues();
       } else {
-        this.messages = 'Errors have been encountered and therefore cant';
+        this.messages = 'Errors have been encountered and therefore cant proceed to execution';
         return false;
       }
   }
@@ -60,5 +61,9 @@ export class AppComponent {
       this.studLname =null;
       this.studProg =null;
       this.studYr =null;
+    }
+
+    onsubmit(regObject){
+      console.log('regObject');
     }
 }
