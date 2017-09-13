@@ -1,3 +1,11 @@
+<div id="options">
+  <button class="btn btn-primary" type="submit" [disabled]="!regForm.valid">
+    Add Student Entry
+  </button>
+  <button id="listStudents" (click)="listStudents()">
+    List Students
+  </button>
+</div>
 <div>
     {{messages}}
 </div>
@@ -22,4 +30,5 @@
     </tr>
   </tbody>
   </table>
+
 </div>

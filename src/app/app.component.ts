@@ -2,7 +2,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',  
+  templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
@@ -63,7 +63,7 @@ export class AppComponent {
       this.studYr =null;
     }
 
-    onsubmit(regObject){
+    onSubmit(regObject){
       console.log('regObject');
     }
 }

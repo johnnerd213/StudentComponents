@@ -5,7 +5,6 @@
     <form (ngSubmit)="onSubmit(regForm)" #regForm="ngForm">
     <div class="form-group">
     <input [(ngModel))]= "studNo"
-        (input)="studNo=$event.target.value"/
         class="form-control"
         ngModel
         required
@@ -14,7 +13,6 @@
         #username="ngModel"> </div>
     <div class="form-group">
     <input [(ngModel))]= "studFname"
-        (input)="studFname=$event.target.value"/
         class="form-control"
         ngModel
         name="studFname" 
@@ -23,7 +21,6 @@
         #studFname="ngModel"> </div>
     <div class="form-group">
     <input [(ngModel))]= "studLname"
-        (input)="studLname=$event.target.value"/
         class="form-control"
         ngModel
         name="studLname" 
@@ -32,7 +29,6 @@
         #studLname="ngModel"> </div>
     <div class="form-group">
     <input [(ngModel))]= "studProg"
-        (input)="studProg=$event.target.value"/
         class="form-control"
         ngModel
         name="studProg" 
@@ -40,25 +36,13 @@
         pattern= "[A-z]+"
         #studProg="ngModel"> 
     </div>
-        <div class="form-group">
     <input [(ngModel))]= "studYr"
-        (input)="studYr=$event.target.value"/
         class="form-control"
         ngModel
         name="studYr" 
         required 
         pattern= "[0-9]+"
         #studYr="ngModel"> 
-    </div>
+    </form>
 </div>
-
-<div id="options">
-  <button class="btn btn-primary" type="submit" [disabled]="!regForm.valid">
-    Add Student Entry
-  </button>
-  <button id="listStudents" (click)="listStudents()">
-    List Students
-  </button>
-</div>
-</form>
 </div></div>
